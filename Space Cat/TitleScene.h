@@ -1,13 +1,13 @@
 //
-//  GameScene.h
+//  TitleScene.h
 //  Space Cat
 //
-
+//  Created by Arsalan Vakili on 2015-07-11.
 //  Copyright (c) 2015 Arsalan Vakili. All rights reserved.
 //
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameScene : SKScene
+@interface TitleScene : SKScene
 
 @end

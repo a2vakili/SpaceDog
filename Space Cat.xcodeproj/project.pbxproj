@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		B63A6CA91B5197C200BF85E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A6CA81B5197C200BF85E9 /* main.m */; };
 		B63A6CAC1B5197C200BF85E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A6CAB1B5197C200BF85E9 /* AppDelegate.m */; };
-		B63A6CAF1B5197C200BF85E9 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A6CAE1B5197C200BF85E9 /* GameScene.m */; };
 		B63A6CB11B5197C200BF85E9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B63A6CB01B5197C200BF85E9 /* GameScene.sks */; };
 		B63A6CB41B5197C200BF85E9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A6CB31B5197C200BF85E9 /* GameViewController.m */; };
 		B63A6CB71B5197C200BF85E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A6CB51B5197C200BF85E9 /* Main.storyboard */; };
 		B63A6CB91B5197C200BF85E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63A6CB81B5197C200BF85E9 /* Images.xcassets */; };
 		B63A6CBC1B5197C200BF85E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63A6CBA1B5197C200BF85E9 /* LaunchScreen.xib */; };
 		B63A6CC81B5197C200BF85E9 /* Space_CatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A6CC71B5197C200BF85E9 /* Space_CatTests.m */; };
+		B63A6CD21B519D7D00BF85E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A6CD11B519D7D00BF85E9 /* CoreGraphics.framework */; };
+		B63A6CD41B519D9200BF85E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A6CD31B519D9200BF85E9 /* Foundation.framework */; };
+		B63A6CD61B519DA500BF85E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A6CD51B519DA500BF85E9 /* UIKit.framework */; };
+		B63A6CD81B519DB700BF85E9 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A6CD71B519DB700BF85E9 /* SpriteKit.framework */; };
+		B63A6CDC1B51A67200BF85E9 /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A6CDB1B51A67200BF85E9 /* TitleScene.m */; };
+		B67CDDB31B52E50E00129365 /* GamePlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CDDB21B52E50E00129365 /* GamePlayScene.m */; };
+		B67CDDB51B52E85000129365 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B67CDDB41B52E85000129365 /* Sprites.atlas */; };
+		B67CDDB81B52ED4400129365 /* MachineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CDDB71B52ED4400129365 /* MachineNode.m */; };
+		B67CDDBB1B52F1FC00129365 /* SpaceCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CDDBA1B52F1FC00129365 /* SpaceCatNode.m */; };
+		B67CDDBE1B52FA3100129365 /* ProjectileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CDDBD1B52FA3100129365 /* ProjectileNode.m */; };
+		B67CDDC21B5308B600129365 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CDDC11B5308B600129365 /* Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +44,6 @@
 		B63A6CA81B5197C200BF85E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B63A6CAA1B5197C200BF85E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B63A6CAB1B5197C200BF85E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B63A6CAD1B5197C200BF85E9 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		B63A6CAE1B5197C200BF85E9 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		B63A6CB01B5197C200BF85E9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		B63A6CB21B5197C200BF85E9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		B63A6CB31B5197C200BF85E9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
@@ -45,6 +53,23 @@
 		B63A6CC11B5197C200BF85E9 /* Space CatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space CatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63A6CC61B5197C200BF85E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63A6CC71B5197C200BF85E9 /* Space_CatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_CatTests.m; sourceTree = "<group>"; };
+		B63A6CD11B519D7D00BF85E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B63A6CD31B519D9200BF85E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B63A6CD51B519DA500BF85E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B63A6CD71B519DB700BF85E9 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		B63A6CDA1B51A67200BF85E9 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		B63A6CDB1B51A67200BF85E9 /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
+		B67CDDB11B52E50E00129365 /* GamePlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayScene.h; sourceTree = "<group>"; };
+		B67CDDB21B52E50E00129365 /* GamePlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayScene.m; sourceTree = "<group>"; };
+		B67CDDB41B52E85000129365 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		B67CDDB61B52ED4400129365 /* MachineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineNode.h; sourceTree = "<group>"; };
+		B67CDDB71B52ED4400129365 /* MachineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineNode.m; sourceTree = "<group>"; };
+		B67CDDB91B52F1FC00129365 /* SpaceCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceCatNode.h; sourceTree = "<group>"; };
+		B67CDDBA1B52F1FC00129365 /* SpaceCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceCatNode.m; sourceTree = "<group>"; };
+		B67CDDBC1B52FA3100129365 /* ProjectileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectileNode.h; sourceTree = "<group>"; };
+		B67CDDBD1B52FA3100129365 /* ProjectileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectileNode.m; sourceTree = "<group>"; };
+		B67CDDC01B5308B600129365 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		B67CDDC11B5308B600129365 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63A6CD81B519DB700BF85E9 /* SpriteKit.framework in Frameworks */,
+				B63A6CD61B519DA500BF85E9 /* UIKit.framework in Frameworks */,
+				B63A6CD41B519D9200BF85E9 /* Foundation.framework in Frameworks */,
+				B63A6CD21B519D7D00BF85E9 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +97,7 @@
 		B63A6C9A1B5197C200BF85E9 = {
 			isa = PBXGroup;
 			children = (
+				B63A6CD91B519DE400BF85E9 /* FrameWork */,
 				B63A6CA51B5197C200BF85E9 /* Space Cat */,
 				B63A6CC41B5197C200BF85E9 /* Space CatTests */,
 				B63A6CA41B5197C200BF85E9 /* Products */,
@@ -86,14 +116,20 @@
 		B63A6CA51B5197C200BF85E9 /* Space Cat */ = {
 			isa = PBXGroup;
 			children = (
-				B63A6CAA1B5197C200BF85E9 /* AppDelegate.h */,
-				B63A6CAB1B5197C200BF85E9 /* AppDelegate.m */,
-				B63A6CAD1B5197C200BF85E9 /* GameScene.h */,
-				B63A6CAE1B5197C200BF85E9 /* GameScene.m */,
-				B63A6CB01B5197C200BF85E9 /* GameScene.sks */,
-				B63A6CB21B5197C200BF85E9 /* GameViewController.h */,
-				B63A6CB31B5197C200BF85E9 /* GameViewController.m */,
+				B63A6CDA1B51A67200BF85E9 /* TitleScene.h */,
+				B63A6CDB1B51A67200BF85E9 /* TitleScene.m */,
+				B67CDDB11B52E50E00129365 /* GamePlayScene.h */,
+				B67CDDB21B52E50E00129365 /* GamePlayScene.m */,
+				B67CDDBC1B52FA3100129365 /* ProjectileNode.h */,
+				B67CDDBD1B52FA3100129365 /* ProjectileNode.m */,
+				B67CDDC01B5308B600129365 /* Utilities.h */,
+				B67CDDC11B5308B600129365 /* Utilities.m */,
+				B67CDDB61B52ED4400129365 /* MachineNode.h */,
+				B67CDDB71B52ED4400129365 /* MachineNode.m */,
+				B67CDDB91B52F1FC00129365 /* SpaceCatNode.h */,
+				B67CDDBA1B52F1FC00129365 /* SpaceCatNode.m */,
 				B63A6CB51B5197C200BF85E9 /* Main.storyboard */,
+				B67CDDB41B52E85000129365 /* Sprites.atlas */,
 				B63A6CB81B5197C200BF85E9 /* Images.xcassets */,
 				B63A6CBA1B5197C200BF85E9 /* LaunchScreen.xib */,
 				B63A6CA61B5197C200BF85E9 /* Supporting Files */,
@@ -104,7 +140,12 @@
 		B63A6CA61B5197C200BF85E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B63A6CB21B5197C200BF85E9 /* GameViewController.h */,
+				B63A6CB31B5197C200BF85E9 /* GameViewController.m */,
 				B63A6CA71B5197C200BF85E9 /* Info.plist */,
+				B63A6CB01B5197C200BF85E9 /* GameScene.sks */,
+				B63A6CAA1B5197C200BF85E9 /* AppDelegate.h */,
+				B63A6CAB1B5197C200BF85E9 /* AppDelegate.m */,
 				B63A6CA81B5197C200BF85E9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -125,6 +166,17 @@
 				B63A6CC61B5197C200BF85E9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B63A6CD91B519DE400BF85E9 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				B63A6CD71B519DB700BF85E9 /* SpriteKit.framework */,
+				B63A6CD51B519DA500BF85E9 /* UIKit.framework */,
+				B63A6CD31B519D9200BF85E9 /* Foundation.framework */,
+				B63A6CD11B519D7D00BF85E9 /* CoreGraphics.framework */,
+			);
+			name = FrameWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +263,7 @@
 				B63A6CB91B5197C200BF85E9 /* Images.xcassets in Resources */,
 				B63A6CB11B5197C200BF85E9 /* GameScene.sks in Resources */,
 				B63A6CB71B5197C200BF85E9 /* Main.storyboard in Resources */,
+				B67CDDB51B52E85000129365 /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63A6CDC1B51A67200BF85E9 /* TitleScene.m in Sources */,
 				B63A6CB41B5197C200BF85E9 /* GameViewController.m in Sources */,
+				B67CDDBE1B52FA3100129365 /* ProjectileNode.m in Sources */,
+				B67CDDC21B5308B600129365 /* Utilities.m in Sources */,
+				B67CDDB31B52E50E00129365 /* GamePlayScene.m in Sources */,
 				B63A6CAC1B5197C200BF85E9 /* AppDelegate.m in Sources */,
-				B63A6CAF1B5197C200BF85E9 /* GameScene.m in Sources */,
 				B63A6CA91B5197C200BF85E9 /* main.m in Sources */,
+				B67CDDBB1B52F1FC00129365 /* SpaceCatNode.m in Sources */,
+				B67CDDB81B52ED4400129365 /* MachineNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +484,7 @@
 				B63A6CCD1B5197C200BF85E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B63A6CCE1B5197C200BF85E9 /* Build configuration list for PBXNativeTarget "Space CatTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +493,7 @@
 				B63A6CD01B5197C200BF85E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
