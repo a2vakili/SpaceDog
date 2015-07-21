@@ -10,4 +10,9 @@
 
 @implementation Utilities
 
++(NSInteger)randomWithMin: (NSInteger)min max: (NSInteger) max{
+    NSInteger randomValue= arc4random()%(max -min) + min;
+    return randomValue;
+}
+
 @end
