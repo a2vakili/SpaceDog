@@ -15,6 +15,8 @@
 		B618E4261B5EB13E0020AC6C /* Gameplay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B618E4231B5EB13E0020AC6C /* Gameplay.mp3 */; };
 		B618E4271B5EB13E0020AC6C /* StartScreen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B618E4241B5EB13E0020AC6C /* StartScreen.mp3 */; };
 		B618E4291B5EB1690020AC6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B618E4281B5EB1690020AC6C /* AVFoundation.framework */; };
+		B618E4621B5F24CB0020AC6C /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = B618E4601B5F24CB0020AC6C /* Explosion.sks */; };
+		B618E4631B5F24CB0020AC6C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = B618E4611B5F24CB0020AC6C /* spark.png */; };
 		B63513EF1B5954D3000BAE8F /* SpaceDogNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B63513EE1B5954D3000BAE8F /* SpaceDogNode.m */; };
 		B63513F61B595D7C000BAE8F /* GroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B63513F51B595D7C000BAE8F /* GroundNode.m */; };
 		B63A6CA91B5197C200BF85E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B63A6CA81B5197C200BF85E9 /* main.m */; };
@@ -57,6 +59,8 @@
 		B618E4231B5EB13E0020AC6C /* Gameplay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Gameplay.mp3; sourceTree = "<group>"; };
 		B618E4241B5EB13E0020AC6C /* StartScreen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StartScreen.mp3; sourceTree = "<group>"; };
 		B618E4281B5EB1690020AC6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B618E4601B5F24CB0020AC6C /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		B618E4611B5F24CB0020AC6C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		B63513ED1B5954D3000BAE8F /* SpaceDogNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceDogNode.h; sourceTree = "<group>"; };
 		B63513EE1B5954D3000BAE8F /* SpaceDogNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceDogNode.m; sourceTree = "<group>"; };
 		B63513F41B595D7C000BAE8F /* GroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundNode.h; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				B67CDDB71B52ED4400129365 /* MachineNode.m */,
 				B67CDDB91B52F1FC00129365 /* SpaceCatNode.h */,
 				B67CDDBA1B52F1FC00129365 /* SpaceCatNode.m */,
+				B618E4601B5F24CB0020AC6C /* Explosion.sks */,
+				B618E4611B5F24CB0020AC6C /* spark.png */,
 				B63A6CB51B5197C200BF85E9 /* Main.storyboard */,
 				B67CDDB41B52E85000129365 /* Sprites.atlas */,
 				B63A6CB81B5197C200BF85E9 /* Images.xcassets */,
@@ -305,8 +311,10 @@
 				B618E4201B5EAE2F0020AC6C /* Laser.caf in Resources */,
 				B63A6CBC1B5197C200BF85E9 /* LaunchScreen.xib in Resources */,
 				B63A6CB91B5197C200BF85E9 /* Images.xcassets in Resources */,
+				B618E4631B5F24CB0020AC6C /* spark.png in Resources */,
 				B63A6CB11B5197C200BF85E9 /* GameScene.sks in Resources */,
 				B618E4251B5EB13E0020AC6C /* GameOver.mp3 in Resources */,
+				B618E4621B5F24CB0020AC6C /* Explosion.sks in Resources */,
 				B618E41E1B5EAE2F0020AC6C /* Damage.caf in Resources */,
 				B63A6CB71B5197C200BF85E9 /* Main.storyboard in Resources */,
 				B67CDDB51B52E85000129365 /* Sprites.atlas in Resources */,

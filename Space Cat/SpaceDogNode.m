@@ -9,9 +9,13 @@
 #import "SpaceDogNode.h"
 #import "Utilities.h"
 
+@interface SpaceDogNode ()
+
+@end
+
 @implementation SpaceDogNode
 
-+(instancetype) spaceDogOfType: (spaceDogType) type{
++(instancetype) spaceDogOfType:(spaceDogType)type health:(NSInteger)health{
     
     SpaceDogNode *spaceDog;
     spaceDog.damaged = NO;
@@ -22,7 +26,8 @@
         spaceDog = [self spriteNodeWithImageNamed:@"spacedog_A_1"];
         
         textures = @[[SKTexture textureWithImageNamed:@"spacedog_A_1"],
-                     [SKTexture textureWithImageNamed:@"spacedog_A_2"]];
+                     [SKTexture textureWithImageNamed:@"spacedog_A_2"],
+                     [SKTexture textureWithImageNamed:@"spacedog_A_3"]];
         spaceDog.type = spaceDogTypeA;
         
                      
@@ -33,12 +38,13 @@
         spaceDog = [self spriteNodeWithImageNamed:@"spacedog_B_1"];
         textures = @[[SKTexture textureWithImageNamed:@"spacedog_B_1"],
                      [SKTexture textureWithImageNamed:@"spacedog_B_2"],
-                     [SKTexture textureWithImageNamed:@"spacedog_B_3"]];
+                     [SKTexture textureWithImageNamed:@"spacedog_B_3"],
+                     [SKTexture textureWithImageNamed:@"spacedog_B_4"]];
         spaceDog.type = spaceDogTypeB;
                      
     }
     
-    spaceDog.health = 100;
+    spaceDog.health = health;
 
     
     SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.1];
@@ -53,30 +59,30 @@
     return spaceDog;
 }
 
--(BOOL)isDamaged{
-    
-    NSArray *textures;
-    if (! self.damaged) {
-        [self removeActionForKey:@"Animation"];
-        if (self.type == spaceDogTypeA) {
-            textures = @[[SKTexture textureWithImageNamed:@"spacedog_A_3"]];
-        }
-        else{
-            textures = @[[SKTexture textureWithImageNamed:@"spacedog_B_4"]];
-        }
-        
-        SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.1];
-        
-        [self runAction:[SKAction repeatActionForever:animation] withKey:@"Animation"];
-        
-        self.damaged = YES;
-        
-        return NO;
-    }
-    else{
-        return self.damaged;
-    }
-}
+//-(BOOL)isDamaged{
+//    
+//    NSArray *textures;
+//    if (! self.damaged) {
+//        [self removeActionForKey:@"Animation"];
+//        if (self.type == spaceDogTypeA) {
+//            textures = @[[SKTexture textureWithImageNamed:@"spacedog_A_3"]];
+//        }
+//        else{
+//            textures = @[[SKTexture textureWithImageNamed:@"spacedog_B_4"]];
+//        }
+//        
+//        SKAction *animation = [SKAction animateWithTextures:textures timePerFrame:0.1];
+//        
+//        [self runAction:[SKAction repeatActionForever:animation] withKey:@"Animation"];
+//        
+//        self.damaged = YES;
+//        
+//        return NO;
+//    }
+//    else{
+//        return self.damaged;
+//    }
+//}
 
 -(void)setUpPhysicsBody{
     self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];

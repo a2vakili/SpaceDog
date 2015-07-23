@@ -18,11 +18,11 @@ typedef NS_ENUM(NSUInteger, spaceDogType) {
 
 @property(nonatomic, getter = isDamaged) BOOL damaged;
 
-@property(nonatomic) int health;
+@property(nonatomic) NSInteger health;
 
 @property(nonatomic) spaceDogType type;
 
-+(instancetype) spaceDogOfType: (spaceDogType) type;
++(instancetype) spaceDogOfType: (spaceDogType)type health:(NSInteger)health;
 
 
 @end

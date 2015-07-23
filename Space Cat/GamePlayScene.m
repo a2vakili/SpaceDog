@@ -23,6 +23,7 @@
 @property(nonatomic) NSTimeInterval totalGameTime;
 @property(nonatomic) NSInteger midSpeed;
 @property(nonatomic) NSTimeInterval addEnemyTimeInterval;
+@property(nonatomic) NSInteger dogHealth;
 
 @property(nonatomic) SKAction *damageSound;
 @property(nonatomic) SKAction *explosionSound;
@@ -42,6 +43,7 @@
         self.totalGameTime = 0;
         self.addEnemyTimeInterval = 1.5;
         self.midSpeed = spaceDogMinSpeed;
+        self.dogHealth = 100;
         
         SKSpriteNode *background=[SKSpriteNode spriteNodeWithImageNamed:@"background_1"];
         background.position= CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
@@ -114,9 +116,10 @@
 -(void)addSpaceDog:(NSTimeInterval)currentTime {
     
     NSInteger randomSpaceDog = [Utilities randomWithMin:0 max:2];
-    SpaceDogNode *spaceDog = [SpaceDogNode spaceDogOfType:randomSpaceDog];
+    SpaceDogNode *spaceDog = [SpaceDogNode spaceDogOfType:randomSpaceDog health:self.dogHealth];
     
-    spaceDog.health = currentTime / 3000;
+    //self.lastTimeEnemyAdded += currentTime;
+
     
     float dy = [Utilities randomWithMin:spaceDogMinSpeed max:spaceDogMaxSpeed];
     
@@ -144,27 +147,31 @@
         self.lastTimeEnemyAdded = 0;
     }
     
-    if (self.totalGameTime > 48) {
+    if (self.totalGameTime > 480) {
         // 480 / 60 = 8 minutes
         self.addEnemyTimeInterval = 0.5;
         self.midSpeed = -160;
+        self.dogHealth = 500;
     }
     
-    else if(self.totalGameTime > 24){
+    else if(self.totalGameTime > 240){
         // 240 / 60 = 4 minutes
         self.addEnemyTimeInterval = 0.65;
         self.midSpeed  = -150;
+        self.dogHealth = 400;
         }
     
-    else if(self.totalGameTime > 12){
+    else if(self.totalGameTime > 120){
         // 120 / 60 = 2 minutes
         self.addEnemyTimeInterval = 0.75;
         self.midSpeed = -125;
+        self.dogHealth = 300;
     }
     
-    else if(self.totalGameTime > 3){
+    else if(self.totalGameTime > 30){
         self.addEnemyTimeInterval = 1.0;
         self.midSpeed = -100.0;
+        self.dogHealth = 200;
     }
 }
 -(void)didBeginContact:(SKPhysicsContact *)contact{
@@ -185,8 +192,7 @@
         ProjectileNode *projectile = (ProjectileNode *)secondBody.node;
         
         //if ([spaceDog isDamaged]) {
-        
-        spaceDog.health = spaceDog.health - 100;
+        spaceDog.health -= 100;
         
         if (spaceDog.health < 1) {
             [spaceDog removeFromParent];
@@ -232,11 +238,17 @@
         SKAction *debrisAction = [SKAction waitForDuration:2.0];
         [debrisNode runAction:debrisAction completion:^{[debrisNode removeFromParent];
                                                                 }];
+        NSString *smokeExplosion = [[NSBundle mainBundle] pathForResource:@"Explosion" ofType:@"sks"];
+        SKEmitterNode *explosion = [NSKeyedUnarchiver unarchiveObjectWithFile:smokeExplosion];
+        explosion.position = position;
+        [self addChild:explosion];
         
+        [explosion runAction:[SKAction waitForDuration:0.5] completion:^{
+            [explosion removeFromParent];
+        }];
         
     }
-    
-    
+        
 }
 
 @end
